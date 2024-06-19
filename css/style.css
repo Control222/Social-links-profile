@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+}
+
+main img {
+  border-radius: 50%;
+  max-width: 75px;
+  margin-top: 2rem;
+}
+
+main h2 {
+  margin-top: 1rem;
+}
+
+.where {
+  color: hsl(75, 94%, 57%);
+  margin-top: 1rem;
+}
+
+.job {
+  margin-top: 1rem;
+}
+
+.links {
+  margin-top: 1rem;
+}
