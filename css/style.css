@@ -3,11 +3,20 @@
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --GREEN: hsl(75, 94%, 57%);
+  --WHITE: hsl(0, 0%, 100%);
+  --GREY: hsl(0, 0%, 20%);
+  --DARKGREY: hsl(0, 0%, 12%);
+  --OFFBLACK: hsl(0, 0%, 8%);
 }
 
 body {
-  background-color: #000;
-  height: 100vh;
+  background-color: var(--OFFBLACK);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,12 +24,12 @@ body {
 }
 
 main {
-  background-color: hsl(0, 0%, 8%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: hsl(0, 0%, 100%);
+  background-color: var(--DARKGREY);
+  text-align: center;
+  color: var(--WHITE);
   border-radius: 0.5rem;
+  padding: 3rem;
+  max-width: 430px;
 }
 
 main img {
@@ -30,18 +39,39 @@ main img {
 }
 
 main h2 {
-  margin-top: 1rem;
+  margin-top: 1.75rem;
+  font-size: 1.75rem;
 }
 
-.where {
-  color: hsl(75, 94%, 57%);
-  margin-top: 1rem;
+main .where {
+  color: var(--GREEN);
+  margin-top: 0.5rem;
+  font-weight: 700;
 }
 
-.job {
-  margin-top: 1rem;
+main .job {
+  margin: 1.75rem 1rem 0 1rem;
 }
 
-.links {
-  margin-top: 1rem;
+main ul {
+  margin-top: 1.75rem;
+}
+
+main ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+main ul li a {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-weight: 600;
+  background-color: var(--GREY);
+  color: var(--WHITE);
+  border-radius: 0.5rem;
+}
+
+main ul li a:hover {
+  background-color: var(--GREEN);
+  color: var(--OFFBLACK);
 }
